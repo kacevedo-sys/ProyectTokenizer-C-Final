@@ -1,0 +1,20 @@
+{
+  "name": "proyecto-tokens-csharp",
+  "version": "1.0.0",
+  "description": "Reconocedor de Tokens para C# - Proyecto 1 Autómatas y Lenguajes Formales",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/app.ts",
+    "dev": "ts-node --watch src/app.ts",
+    "test": "ts-node src/app.ts test/test1.cs"
+  },
+  "keywords": ["tokens", "csharp", "lexer", "automata"],
+  "author": "Equipo de Proyecto",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  }
+}

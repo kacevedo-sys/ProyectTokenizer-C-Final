@@ -1,0 +1,58 @@
+Categoría,Token,Conteo,Frecuencia Relativa
+"Cadenas de Texto",""""Juan"""",1,0.76%
+"General","(",9,6.82%
+"General","int",7,5.30%
+"General","}",5,3.79%
+"General","i",4,3.03%
+"General","Console",3,2.27%
+"General","WriteLine",3,2.27%
+"General",".",3,2.27%
+"General","static",2,1.52%
+"General","double",2,1.52%
+"General","nombre",2,1.52%
+"General","edad",2,1.52%
+"General","salario",2,1.52%
+"General","activo",2,1.52%
+"General","resultado",2,1.52%
+"General","Calcular",2,1.52%
+"General","a",2,1.52%
+"General","b",2,1.52%
+"General","","",2,1.52%
+"General","10",2,1.52%
+"General","5",2,1.52%
+"General","*",2,1.52%
+"General","class",1,0.76%
+"General","void",1,0.76%
+"General","string",1,0.76%
+"General","bool",1,0.76%
+"General","true",1,0.76%
+"General","if",1,0.76%
+"General","for",1,0.76%
+"General","return",1,0.76%
+"General","Program",1,0.76%
+"General","Main",1,0.76%
+"General","suma",1,0.76%
+"General","total",1,0.76%
+"General","""" es mayor de edad"""",1,0.76%
+"General",""""Iteración: """",1,0.76%
+"General",""""Resultado: """",1,0.76%
+"General","1500.75",1,0.76%
+"General","1.21",1,0.76%
+"General","18",1,0.76%
+"General","0",1,0.76%
+"General","20",1,0.76%
+"General","2",1,0.76%
+"General","++",1,0.76%
+"General","<",1,0.76%
+"Llaves Cerradas",")",9,6.82%
+"Números","25",1,0.76%
+"Operadores Aritméticos","+",5,3.79%
+"Operadores de Asignación","=",8,6.06%
+"Operadores de Comparación",">=",1,0.76%
+"Operadores Lógicos","&&",1,0.76%
+"Palabras Reservadas","using",1,0.76%
+"Signos de Agrupación","{",5,3.79%
+"Signos de Puntuación",";",14,10.61%
+"Variables","System",1,0.76%
+
+"TOTAL","",132,100.00%

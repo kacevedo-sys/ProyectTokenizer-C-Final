@@ -1,0 +1,60 @@
+RESUMEN DE CONTEO POR PALABRA
+================================
+
+| Elemento | Palabra | Conteo |
+|----------|---------|--------|
+| Cadenas de Texto | "Juan" | 1 |
+| | ( | 9 |
+| | int | 7 |
+| | } | 5 |
+| | i | 4 |
+| | Console | 3 |
+| | WriteLine | 3 |
+| | . | 3 |
+| | static | 2 |
+| | double | 2 |
+| | nombre | 2 |
+| | edad | 2 |
+| | salario | 2 |
+| | activo | 2 |
+| | resultado | 2 |
+| | Calcular | 2 |
+| | a | 2 |
+| | b | 2 |
+| | , | 2 |
+| | 10 | 2 |
+| | 5 | 2 |
+| | * | 2 |
+| | class | 1 |
+| | void | 1 |
+| | string | 1 |
+| | bool | 1 |
+| | true | 1 |
+| | if | 1 |
+| | for | 1 |
+| | return | 1 |
+| | Program | 1 |
+| | Main | 1 |
+| | suma | 1 |
+| | total | 1 |
+| | " es mayor de edad" | 1 |
+| | "Iteración: " | 1 |
+| | "Resultado: " | 1 |
+| | 1500.75 | 1 |
+| | 1.21 | 1 |
+| | 18 | 1 |
+| | 0 | 1 |
+| | 20 | 1 |
+| | 2 | 1 |
+| | ++ | 1 |
+| | < | 1 |
+| Llaves Cerradas | ) | 9 |
+| Números | 25 | 1 |
+| Operadores Aritméticos | + | 5 |
+| Operadores de Asignación | = | 8 |
+| Operadores de Comparación | >= | 1 |
+| Operadores Lógicos | && | 1 |
+| Palabras Reservadas | using | 1 |
+| Signos de Agrupación | { | 5 |
+| Signos de Puntuación | ; | 14 |
+| Variables | System | 1 |

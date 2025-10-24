@@ -1,0 +1,682 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte Léxico - test/valid/test1.cs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card h2 {
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #667eea;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        th:hover {
+            background-color: #5a6fd8;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .token-category {
+            font-weight: bold;
+            color: #667eea;
+            background-color: #f0f4ff;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        
+        .full-width {
+            grid-column: 1 / -1;
+        }
+        
+        .category-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            display: flex;
+            justify-content: between;
+        }
+        
+        .category-name {
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .category-count {
+            background: #667eea;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.9em;
+        }
+        
+        .summary-total {
+            background: #4CAF50;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .highlight {
+            background-color: #fffacd !important;
+        }
+        
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Reporte de Análisis Léxico</h1>
+            <p>Archivo: test/valid/test1.cs</p>
+            <p>Generado: 23/10/2025, 21:37:06</p>
+        </div>
+        
+        <div class="grid">
+            <div class="card">
+                <h2>📈 Estadísticas Generales</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">132</div>
+                        <div class="stat-label">Total Tokens</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">55</div>
+                        <div class="stat-label">Tokens Únicos</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">11</div>
+                        <div class="stat-label">Categorías</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>📋 Resumen por Categoría</h2>
+                
+        <div class="category-item">
+            <span class="category-name">General</span>
+            <span class="category-count">85</span>
+        </div>
+    
+        <div class="category-item">
+            <span class="category-name">Signos de Puntuación</span>
+            <span class="category-count">14</span>
+        </div>
+    
+        <div class="category-item">
+            <span class="category-name">Llaves Cerradas</span>
+            <span class="category-count">9</span>
+        </div>
+    
+        <div class="category-item">
+            <span class="category-name">Operadores de Asignación</span>
+            <span class="category-count">8</span>
+        </div>
+    
+        <div class="category-item">
+            <span class="category-name">Signos de Agrupación</span>
+            <span class="category-count">5</span>
+        </div>
+    
+        <div class="category-item">
+            <span class="category-name">Operadores Aritméticos</span>
+            <span class="category-count">5</span>
+        </div>
+    
+        <div class="category-item">
+            <span class="category-name">Palabras Reservadas</span>
+            <span class="category-count">1</span>
+        </div>
+    
+        <div class="category-item">
+            <span class="category-name">Variables</span>
+            <span class="category-count">1</span>
+        </div>
+    
+        <div class="category-item">
+            <span class="category-name">Cadenas de Texto</span>
+            <span class="category-count">1</span>
+        </div>
+    
+        <div class="category-item">
+            <span class="category-name">Números</span>
+            <span class="category-count">1</span>
+        </div>
+    
+        <div class="category-item">
+            <span class="category-name">Operadores de Comparación</span>
+            <span class="category-count">1</span>
+        </div>
+    
+        <div class="category-item">
+            <span class="category-name">Operadores Lógicos</span>
+            <span class="category-count">1</span>
+        </div>
+    
+            </div>
+            
+            <div class="card full-width">
+                <h2>📝 Detalle de Tokens</h2>
+                <table id="tokensTable">
+                    <thead>
+                        <tr>
+                            <th data-sort="category">Categoría ▼</th>
+                            <th data-sort="token">Token</th>
+                            <th data-sort="count">Conteo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+        <tr>
+            <td><span class="token-category">Palabras Reservadas</span></td>
+            <td><code>using</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>class</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>static</code></td>
+            <td><strong>2</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>void</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>string</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>int</code></td>
+            <td><strong>7</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>double</code></td>
+            <td><strong>2</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>bool</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>true</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>if</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>for</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>return</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">Variables</span></td>
+            <td><code>System</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>Program</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>Main</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>nombre</code></td>
+            <td><strong>2</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>edad</code></td>
+            <td><strong>2</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>salario</code></td>
+            <td><strong>2</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>activo</code></td>
+            <td><strong>2</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>suma</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>total</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>Console</code></td>
+            <td><strong>3</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>WriteLine</code></td>
+            <td><strong>3</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>i</code></td>
+            <td><strong>4</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>resultado</code></td>
+            <td><strong>2</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>Calcular</code></td>
+            <td><strong>2</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>a</code></td>
+            <td><strong>2</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>b</code></td>
+            <td><strong>2</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">Signos de Puntuación</span></td>
+            <td><code>;</code></td>
+            <td><strong>14</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>.</code></td>
+            <td><strong>3</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>,</code></td>
+            <td><strong>2</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">Signos de Agrupación</span></td>
+            <td><code>{</code></td>
+            <td><strong>5</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>(</code></td>
+            <td><strong>9</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">Llaves Cerradas</span></td>
+            <td><code>)</code></td>
+            <td><strong>9</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>}</code></td>
+            <td><strong>5</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">Operadores de Asignación</span></td>
+            <td><code>=</code></td>
+            <td><strong>8</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">Cadenas de Texto</span></td>
+            <td><code>&quot;Juan&quot;</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>&quot; es mayor de edad&quot;</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>&quot;Iteración: &quot;</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>&quot;Resultado: &quot;</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">Números</span></td>
+            <td><code>25</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>1500.75</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>10</code></td>
+            <td><strong>2</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>5</code></td>
+            <td><strong>2</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>1.21</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>18</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>0</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>20</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>2</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">Operadores Aritméticos</span></td>
+            <td><code>+</code></td>
+            <td><strong>5</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>*</code></td>
+            <td><strong>2</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>++</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">Operadores de Comparación</span></td>
+            <td><code>&gt;=</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">General</span></td>
+            <td><code>&lt;</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+        <tr>
+            <td><span class="token-category">Operadores Lógicos</span></td>
+            <td><code>&amp;&amp;</code></td>
+            <td><strong>1</strong></td>
+        </tr>
+    
+                    </tbody>
+                </table>
+                <div class="summary-total">
+                    Total de tokens encontrados: 132
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const table = document.getElementById('tokensTable');
+            const headers = table.querySelectorAll('th');
+            const tbody = table.querySelector('tbody');
+            let currentSort = { column: 'count', direction: 'desc' };
+            
+            // Ordenamiento de tabla
+            headers.forEach(header => {
+                header.addEventListener('click', () => {
+                    const column = header.getAttribute('data-sort');
+                    sortTable(column);
+                });
+            });
+            
+            function sortTable(column) {
+                const rows = Array.from(tbody.querySelectorAll('tr'));
+                const direction = currentSort.column === column && currentSort.direction === 'asc' ? 'desc' : 'asc';
+                
+                rows.sort((a, b) => {
+                    const aValue = getCellValue(a, column);
+                    const bValue = getCellValue(b, column);
+                    
+                    if (column === 'count') {
+                        return direction === 'asc' ? aValue - bValue : bValue - aValue;
+                    } else {
+                        return direction === 'asc' 
+                            ? aValue.localeCompare(bValue)
+                            : bValue.localeCompare(aValue);
+                    }
+                });
+                
+                // Actualizar indicadores de ordenamiento
+                headers.forEach(h => h.innerHTML = h.innerHTML.replace(' ▼', '').replace(' ▲', ''));
+                header.innerHTML += direction === 'asc' ? ' ▲' : ' ▼';
+                
+                // Reordenar filas
+                rows.forEach(row => tbody.appendChild(row));
+                currentSort = { column, direction };
+            }
+            
+            function getCellValue(row, column) {
+                const cellIndex = column === 'category' ? 0 : column === 'token' ? 1 : 2;
+                const cell = row.cells[cellIndex];
+                return column === 'count' ? parseInt(cell.textContent) : cell.textContent;
+            }
+            
+            // Resaltar filas al hacer hover
+            tbody.querySelectorAll('tr').forEach(row => {
+                row.addEventListener('mouseenter', function() {
+                    this.style.backgroundColor = '#f0f8ff';
+                });
+                row.addEventListener('mouseleave', function() {
+                    this.style.backgroundColor = '';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

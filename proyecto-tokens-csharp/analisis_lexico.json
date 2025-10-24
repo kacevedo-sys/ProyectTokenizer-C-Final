@@ -1,0 +1,1045 @@
+{
+  "metadata": {
+    "generatedAt": "2025-10-24T03:37:06.315Z",
+    "totalTokens": 263,
+    "validTokens": 263,
+    "errorTokens": 0
+  },
+  "statistics": {
+    "totalTokens": 132,
+    "uniqueTokens": 55,
+    "categoriesCount": 11,
+    "tokenDensity": {
+      "Palabras Reservadas": "0.76%",
+      "General": "64.39%",
+      "Variables": "0.76%",
+      "Signos de Puntuación": "10.61%",
+      "Signos de Agrupación": "3.79%",
+      "Llaves Cerradas": "6.82%",
+      "Operadores de Asignación": "6.06%",
+      "Cadenas de Texto": "0.76%",
+      "Números": "0.76%",
+      "Operadores Aritméticos": "3.79%",
+      "Operadores de Comparación": "0.76%",
+      "Operadores Lógicos": "0.76%"
+    }
+  },
+  "tokensByCategory": {
+    "Palabras Reservadas": {
+      "total": 1,
+      "tokens": [
+        {
+          "token": "using",
+          "count": 1,
+          "percentage": "0.76%"
+        }
+      ]
+    },
+    "General": {
+      "total": 85,
+      "tokens": [
+        {
+          "token": "(",
+          "count": 9,
+          "percentage": "6.82%"
+        },
+        {
+          "token": "int",
+          "count": 7,
+          "percentage": "5.30%"
+        },
+        {
+          "token": "}",
+          "count": 5,
+          "percentage": "3.79%"
+        },
+        {
+          "token": "i",
+          "count": 4,
+          "percentage": "3.03%"
+        },
+        {
+          "token": "Console",
+          "count": 3,
+          "percentage": "2.27%"
+        },
+        {
+          "token": "WriteLine",
+          "count": 3,
+          "percentage": "2.27%"
+        },
+        {
+          "token": ".",
+          "count": 3,
+          "percentage": "2.27%"
+        },
+        {
+          "token": "static",
+          "count": 2,
+          "percentage": "1.52%"
+        },
+        {
+          "token": "double",
+          "count": 2,
+          "percentage": "1.52%"
+        },
+        {
+          "token": "nombre",
+          "count": 2,
+          "percentage": "1.52%"
+        },
+        {
+          "token": "edad",
+          "count": 2,
+          "percentage": "1.52%"
+        },
+        {
+          "token": "salario",
+          "count": 2,
+          "percentage": "1.52%"
+        },
+        {
+          "token": "activo",
+          "count": 2,
+          "percentage": "1.52%"
+        },
+        {
+          "token": "resultado",
+          "count": 2,
+          "percentage": "1.52%"
+        },
+        {
+          "token": "Calcular",
+          "count": 2,
+          "percentage": "1.52%"
+        },
+        {
+          "token": "a",
+          "count": 2,
+          "percentage": "1.52%"
+        },
+        {
+          "token": "b",
+          "count": 2,
+          "percentage": "1.52%"
+        },
+        {
+          "token": ",",
+          "count": 2,
+          "percentage": "1.52%"
+        },
+        {
+          "token": "10",
+          "count": 2,
+          "percentage": "1.52%"
+        },
+        {
+          "token": "5",
+          "count": 2,
+          "percentage": "1.52%"
+        },
+        {
+          "token": "*",
+          "count": 2,
+          "percentage": "1.52%"
+        },
+        {
+          "token": "class",
+          "count": 1,
+          "percentage": "0.76%"
+        },
+        {
+          "token": "void",
+          "count": 1,
+          "percentage": "0.76%"
+        },
+        {
+          "token": "string",
+          "count": 1,
+          "percentage": "0.76%"
+        },
+        {
+          "token": "bool",
+          "count": 1,
+          "percentage": "0.76%"
+        },
+        {
+          "token": "true",
+          "count": 1,
+          "percentage": "0.76%"
+        },
+        {
+          "token": "if",
+          "count": 1,
+          "percentage": "0.76%"
+        },
+        {
+          "token": "for",
+          "count": 1,
+          "percentage": "0.76%"
+        },
+        {
+          "token": "return",
+          "count": 1,
+          "percentage": "0.76%"
+        },
+        {
+          "token": "Program",
+          "count": 1,
+          "percentage": "0.76%"
+        },
+        {
+          "token": "Main",
+          "count": 1,
+          "percentage": "0.76%"
+        },
+        {
+          "token": "suma",
+          "count": 1,
+          "percentage": "0.76%"
+        },
+        {
+          "token": "total",
+          "count": 1,
+          "percentage": "0.76%"
+        },
+        {
+          "token": "\" es mayor de edad\"",
+          "count": 1,
+          "percentage": "0.76%"
+        },
+        {
+          "token": "\"Iteración: \"",
+          "count": 1,
+          "percentage": "0.76%"
+        },
+        {
+          "token": "\"Resultado: \"",
+          "count": 1,
+          "percentage": "0.76%"
+        },
+        {
+          "token": "1500.75",
+          "count": 1,
+          "percentage": "0.76%"
+        },
+        {
+          "token": "1.21",
+          "count": 1,
+          "percentage": "0.76%"
+        },
+        {
+          "token": "18",
+          "count": 1,
+          "percentage": "0.76%"
+        },
+        {
+          "token": "0",
+          "count": 1,
+          "percentage": "0.76%"
+        },
+        {
+          "token": "20",
+          "count": 1,
+          "percentage": "0.76%"
+        },
+        {
+          "token": "2",
+          "count": 1,
+          "percentage": "0.76%"
+        },
+        {
+          "token": "++",
+          "count": 1,
+          "percentage": "0.76%"
+        },
+        {
+          "token": "<",
+          "count": 1,
+          "percentage": "0.76%"
+        }
+      ]
+    },
+    "Variables": {
+      "total": 1,
+      "tokens": [
+        {
+          "token": "System",
+          "count": 1,
+          "percentage": "0.76%"
+        }
+      ]
+    },
+    "Signos de Puntuación": {
+      "total": 14,
+      "tokens": [
+        {
+          "token": ";",
+          "count": 14,
+          "percentage": "10.61%"
+        }
+      ]
+    },
+    "Signos de Agrupación": {
+      "total": 5,
+      "tokens": [
+        {
+          "token": "{",
+          "count": 5,
+          "percentage": "3.79%"
+        }
+      ]
+    },
+    "Llaves Cerradas": {
+      "total": 9,
+      "tokens": [
+        {
+          "token": ")",
+          "count": 9,
+          "percentage": "6.82%"
+        }
+      ]
+    },
+    "Operadores de Asignación": {
+      "total": 8,
+      "tokens": [
+        {
+          "token": "=",
+          "count": 8,
+          "percentage": "6.06%"
+        }
+      ]
+    },
+    "Cadenas de Texto": {
+      "total": 1,
+      "tokens": [
+        {
+          "token": "\"Juan\"",
+          "count": 1,
+          "percentage": "0.76%"
+        }
+      ]
+    },
+    "Números": {
+      "total": 1,
+      "tokens": [
+        {
+          "token": "25",
+          "count": 1,
+          "percentage": "0.76%"
+        }
+      ]
+    },
+    "Operadores Aritméticos": {
+      "total": 5,
+      "tokens": [
+        {
+          "token": "+",
+          "count": 5,
+          "percentage": "3.79%"
+        }
+      ]
+    },
+    "Operadores de Comparación": {
+      "total": 1,
+      "tokens": [
+        {
+          "token": ">=",
+          "count": 1,
+          "percentage": "0.76%"
+        }
+      ]
+    },
+    "Operadores Lógicos": {
+      "total": 1,
+      "tokens": [
+        {
+          "token": "&&",
+          "count": 1,
+          "percentage": "0.76%"
+        }
+      ]
+    }
+  },
+  "detailedSummary": [
+    {
+      "element": "Palabras Reservadas",
+      "word": "using",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "class",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "static",
+      "count": 2
+    },
+    {
+      "element": "",
+      "word": "void",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "string",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "int",
+      "count": 7
+    },
+    {
+      "element": "",
+      "word": "double",
+      "count": 2
+    },
+    {
+      "element": "",
+      "word": "bool",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "true",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "if",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "for",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "return",
+      "count": 1
+    },
+    {
+      "element": "Variables",
+      "word": "System",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "Program",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "Main",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "nombre",
+      "count": 2
+    },
+    {
+      "element": "",
+      "word": "edad",
+      "count": 2
+    },
+    {
+      "element": "",
+      "word": "salario",
+      "count": 2
+    },
+    {
+      "element": "",
+      "word": "activo",
+      "count": 2
+    },
+    {
+      "element": "",
+      "word": "suma",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "total",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "Console",
+      "count": 3
+    },
+    {
+      "element": "",
+      "word": "WriteLine",
+      "count": 3
+    },
+    {
+      "element": "",
+      "word": "i",
+      "count": 4
+    },
+    {
+      "element": "",
+      "word": "resultado",
+      "count": 2
+    },
+    {
+      "element": "",
+      "word": "Calcular",
+      "count": 2
+    },
+    {
+      "element": "",
+      "word": "a",
+      "count": 2
+    },
+    {
+      "element": "",
+      "word": "b",
+      "count": 2
+    },
+    {
+      "element": "Signos de Puntuación",
+      "word": ";",
+      "count": 14
+    },
+    {
+      "element": "",
+      "word": ".",
+      "count": 3
+    },
+    {
+      "element": "",
+      "word": ",",
+      "count": 2
+    },
+    {
+      "element": "Signos de Agrupación",
+      "word": "{",
+      "count": 5
+    },
+    {
+      "element": "",
+      "word": "(",
+      "count": 9
+    },
+    {
+      "element": "Llaves Cerradas",
+      "word": ")",
+      "count": 9
+    },
+    {
+      "element": "",
+      "word": "}",
+      "count": 5
+    },
+    {
+      "element": "Operadores de Asignación",
+      "word": "=",
+      "count": 8
+    },
+    {
+      "element": "Cadenas de Texto",
+      "word": "\"Juan\"",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "\" es mayor de edad\"",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "\"Iteración: \"",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "\"Resultado: \"",
+      "count": 1
+    },
+    {
+      "element": "Números",
+      "word": "25",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "1500.75",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "10",
+      "count": 2
+    },
+    {
+      "element": "",
+      "word": "5",
+      "count": 2
+    },
+    {
+      "element": "",
+      "word": "1.21",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "18",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "0",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "20",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "2",
+      "count": 1
+    },
+    {
+      "element": "Operadores Aritméticos",
+      "word": "+",
+      "count": 5
+    },
+    {
+      "element": "",
+      "word": "*",
+      "count": 2
+    },
+    {
+      "element": "",
+      "word": "++",
+      "count": 1
+    },
+    {
+      "element": "Operadores de Comparación",
+      "word": ">=",
+      "count": 1
+    },
+    {
+      "element": "",
+      "word": "<",
+      "count": 1
+    },
+    {
+      "element": "Operadores Lógicos",
+      "word": "&&",
+      "count": 1
+    }
+  ],
+  "tokenFrequency": [
+    {
+      "token": ";",
+      "category": "Signos de Puntuación",
+      "count": 14,
+      "percentage": "10.61%"
+    },
+    {
+      "token": "(",
+      "category": "General",
+      "count": 9,
+      "percentage": "6.82%"
+    },
+    {
+      "token": ")",
+      "category": "Llaves Cerradas",
+      "count": 9,
+      "percentage": "6.82%"
+    },
+    {
+      "token": "=",
+      "category": "Operadores de Asignación",
+      "count": 8,
+      "percentage": "6.06%"
+    },
+    {
+      "token": "int",
+      "category": "General",
+      "count": 7,
+      "percentage": "5.30%"
+    },
+    {
+      "token": "{",
+      "category": "Signos de Agrupación",
+      "count": 5,
+      "percentage": "3.79%"
+    },
+    {
+      "token": "}",
+      "category": "General",
+      "count": 5,
+      "percentage": "3.79%"
+    },
+    {
+      "token": "+",
+      "category": "Operadores Aritméticos",
+      "count": 5,
+      "percentage": "3.79%"
+    },
+    {
+      "token": "i",
+      "category": "General",
+      "count": 4,
+      "percentage": "3.03%"
+    },
+    {
+      "token": "Console",
+      "category": "General",
+      "count": 3,
+      "percentage": "2.27%"
+    },
+    {
+      "token": "WriteLine",
+      "category": "General",
+      "count": 3,
+      "percentage": "2.27%"
+    },
+    {
+      "token": ".",
+      "category": "General",
+      "count": 3,
+      "percentage": "2.27%"
+    },
+    {
+      "token": "static",
+      "category": "General",
+      "count": 2,
+      "percentage": "1.52%"
+    },
+    {
+      "token": "double",
+      "category": "General",
+      "count": 2,
+      "percentage": "1.52%"
+    },
+    {
+      "token": "nombre",
+      "category": "General",
+      "count": 2,
+      "percentage": "1.52%"
+    },
+    {
+      "token": "edad",
+      "category": "General",
+      "count": 2,
+      "percentage": "1.52%"
+    },
+    {
+      "token": "salario",
+      "category": "General",
+      "count": 2,
+      "percentage": "1.52%"
+    },
+    {
+      "token": "activo",
+      "category": "General",
+      "count": 2,
+      "percentage": "1.52%"
+    },
+    {
+      "token": "resultado",
+      "category": "General",
+      "count": 2,
+      "percentage": "1.52%"
+    },
+    {
+      "token": "Calcular",
+      "category": "General",
+      "count": 2,
+      "percentage": "1.52%"
+    },
+    {
+      "token": "a",
+      "category": "General",
+      "count": 2,
+      "percentage": "1.52%"
+    },
+    {
+      "token": "b",
+      "category": "General",
+      "count": 2,
+      "percentage": "1.52%"
+    },
+    {
+      "token": ",",
+      "category": "General",
+      "count": 2,
+      "percentage": "1.52%"
+    },
+    {
+      "token": "10",
+      "category": "General",
+      "count": 2,
+      "percentage": "1.52%"
+    },
+    {
+      "token": "5",
+      "category": "General",
+      "count": 2,
+      "percentage": "1.52%"
+    },
+    {
+      "token": "*",
+      "category": "General",
+      "count": 2,
+      "percentage": "1.52%"
+    },
+    {
+      "token": "using",
+      "category": "Palabras Reservadas",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "class",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "void",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "string",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "bool",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "true",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "if",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "for",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "return",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "System",
+      "category": "Variables",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "Program",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "Main",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "suma",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "total",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "\"Juan\"",
+      "category": "Cadenas de Texto",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "\" es mayor de edad\"",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "\"Iteración: \"",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "\"Resultado: \"",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "25",
+      "category": "Números",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "1500.75",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "1.21",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "18",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "0",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "20",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "2",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "++",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": ">=",
+      "category": "Operadores de Comparación",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "<",
+      "category": "General",
+      "count": 1,
+      "percentage": "0.76%"
+    },
+    {
+      "token": "&&",
+      "category": "Operadores Lógicos",
+      "count": 1,
+      "percentage": "0.76%"
+    }
+  ],
+  "mostFrequentTokens": [
+    {
+      "rank": 1,
+      "token": ";",
+      "category": "Signos de Puntuación",
+      "count": 14,
+      "percentage": "10.61%"
+    },
+    {
+      "rank": 2,
+      "token": "(",
+      "category": "General",
+      "count": 9,
+      "percentage": "6.82%"
+    },
+    {
+      "rank": 3,
+      "token": ")",
+      "category": "Llaves Cerradas",
+      "count": 9,
+      "percentage": "6.82%"
+    },
+    {
+      "rank": 4,
+      "token": "=",
+      "category": "Operadores de Asignación",
+      "count": 8,
+      "percentage": "6.06%"
+    },
+    {
+      "rank": 5,
+      "token": "int",
+      "category": "General",
+      "count": 7,
+      "percentage": "5.30%"
+    },
+    {
+      "rank": 6,
+      "token": "{",
+      "category": "Signos de Agrupación",
+      "count": 5,
+      "percentage": "3.79%"
+    },
+    {
+      "rank": 7,
+      "token": "}",
+      "category": "General",
+      "count": 5,
+      "percentage": "3.79%"
+    },
+    {
+      "rank": 8,
+      "token": "+",
+      "category": "Operadores Aritméticos",
+      "count": 5,
+      "percentage": "3.79%"
+    },
+    {
+      "rank": 9,
+      "token": "i",
+      "category": "General",
+      "count": 4,
+      "percentage": "3.03%"
+    },
+    {
+      "rank": 10,
+      "token": "Console",
+      "category": "General",
+      "count": 3,
+      "percentage": "2.27%"
+    }
+  ]
+}
