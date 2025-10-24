@@ -74,9 +74,9 @@ class LexicalColorizer {
       ReportGenerator.generateSalidaTxt(result.summary, filePath);
 
       console.log('\n TODOS LOS REPORTES HAN SIDO GENERADOS:');
-      console.log('    reporte_lexico.html (Visualización interactiva)');
-      console.log('    analisis_lexico.json (Datos estructurados)');
-      console.log('    reporte_tokens.csv (Para Excel/Sheets)');
+      console.log('    Reporte_lexico.html (Visualización interactiva)');
+      console.log('    Analisis_lexico.json (Datos estructurados)');
+      console.log('    Reporte_tokens.csv (Para Excel/Sheets)');
       console.log('    Salida.txt (Formato legacy)');
       
       console.log('\n Proceso completado exitosamente!');
