@@ -58,8 +58,12 @@ class LexicalColorizer {
       const summary = ReportGenerator.generateConsoleSummary(result.summary);
       console.log(summary);
 
+<<<<<<< HEAD
       //  NUEVO: GENERAR TODOS LOS REPORTES MEJORADOS DE LOS CAMBIOS EN LOS REPORTES
     
+=======
+      //  NUEVO: GENERAR TODOS LOS REPORTES MEJORADOS
+>>>>>>> Modificacion-app
       console.log('\n GENERANDO REPORTES MEJORADOS...');
       
       // 1. HTML (Principal - Recomendado)
