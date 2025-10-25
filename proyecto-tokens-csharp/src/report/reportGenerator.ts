@@ -1,41 +1,30 @@
 import { TokenSummary } from '../lexer/types';
 import * as fs from 'fs';
+import * as path from 'path';
 
 export class ReportGenerator {
-  public static generateSalidaTxt(summary: TokenSummary[], filePath: string): void {
-    let content = 'RESUMEN DE CONTEO POR PALABRA\n';
-    content += '================================\n\n';
+  public static generateSalidaTxt(summary: TokenSummary[], filePath: string, outputDir: string = './report_output'): void {
+    if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+    const txtPath = path.join(outputDir, 'Salida.txt');
 
-    let table = '| Elemento | Palabra | Conteo |\n';
-    table += '|----------|---------|--------|\n';
+    let content = '📘 RESUMEN DE CONTEO POR PALABRA\n';
+    content += '=====================================\n\n';
+    content += '| Elemento | Palabra | Conteo |\n';
+    content += '|----------|----------|--------|\n';
 
     for (const item of summary) {
-      if (item.element) {
-        table += `| ${item.element} | ${item.word} | ${item.count} |\n`;
-      } else {
-        table += `| | ${item.word} | ${item.count} |\n`;
-      }
+      content += `| ${item.element || '-'} | ${item.word} | ${item.count} |\n`;
     }
 
-    content += table;
-    
-    // Guardar archivo
-    fs.writeFileSync('Salida.txt', content, 'utf-8');
-    console.log('📄 Archivo Salida.txt generado correctamente');
+    fs.writeFileSync(txtPath, content, 'utf-8');
+    console.log(`📝 Archivo TXT generado: ${txtPath}`);
   }
 
   public static generateConsoleSummary(summary: TokenSummary[]): string {
-    let table = '| Elemento | Palabra | Conteo |\n';
-    table += '|----------|---------|--------|\n';
-    
-    for (const item of summary) {
-      if (item.element) {
-        table += `| ${item.element} | ${item.word} | ${item.count} |\n`;
-      } else {
-        table += `| | ${item.word} | ${item.count} |\n`;
-      }
-    }
-
-    return table;
+    const header = '| Elemento | Palabra | Conteo |\n|----------|----------|--------|\n';
+    const rows = summary
+      .map(item => `| ${item.element || '-'} | ${item.word} | ${item.count} |`)
+      .join('\n');
+    return header + rows;
   }
 }
