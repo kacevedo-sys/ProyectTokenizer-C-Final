@@ -79,3 +79,4 @@ El analizador utiliza códigos de error estándar del compilador C#:
 - Node.js 14+
 - TypeScript 4.5+
 - npm 6+
+Yonatan Boch 
